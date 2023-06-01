@@ -64,6 +64,6 @@ func onCommand(event *events.ApplicationCommandInteractionCreate) {
 	}
 	_ = event.CreateMessage(discord.NewMessageCreateBuilder().
 		AddActionRow(discord.NewLinkButton("Open reverse image search", googleLensSearch+link)).
-		SetFlags(discord.MessageFlagEphemeral).
+		SetEphemeral(true).
 		Build())
 }
