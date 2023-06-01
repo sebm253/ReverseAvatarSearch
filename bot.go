@@ -24,7 +24,8 @@ func main() {
 	log.Info("disgo version: ", disgo.Version)
 
 	client, err := disgo.New(os.Getenv("REVERSE_AVATAR_SEARCH_TOKEN"),
-		bot.WithGatewayConfigOpts(gateway.WithIntents(gateway.IntentsNone)),
+		bot.WithGatewayConfigOpts(gateway.WithIntents(gateway.IntentsNone),
+			gateway.WithPresenceOpts(gateway.WithWatchingActivity("avatars"))),
 		bot.WithCacheConfigOpts(cache.WithCaches(cache.FlagsNone)),
 		bot.WithEventListeners(&events.ListenerAdapter{
 			OnApplicationCommandInteraction: onCommand,
