@@ -1,4 +1,4 @@
-module bot-template
+module reverse-avatar-search
 
 go 1.20
 
