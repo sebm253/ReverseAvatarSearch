@@ -3,7 +3,7 @@ module reverse-avatar-search
 go 1.20
 
 require (
-	github.com/disgoorg/disgo v0.16.5
+	github.com/disgoorg/disgo v0.16.6
 	github.com/disgoorg/log v1.2.0
 )
 
