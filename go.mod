@@ -3,7 +3,7 @@ module reverse-avatar-search
 go 1.21
 
 require (
-	github.com/disgoorg/disgo v0.18.7
+	github.com/disgoorg/disgo v0.18.8
 	github.com/lmittmann/tint v1.0.4
 )
 
