@@ -4,7 +4,7 @@ go 1.24
 
 require (
 	github.com/disgoorg/disgo v0.18.16
-	github.com/lmittmann/tint v1.1.0
+	github.com/lmittmann/tint v1.1.1
 )
 
 require (
